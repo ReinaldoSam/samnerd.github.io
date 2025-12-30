@@ -7,6 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
+    @font-face {
+  font-family: 'SamNerdFont';
+  src: url('fontes/SamNerd.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
     :root {
       --blue: #1e88e5;
       --dark: #1f1f1f;
@@ -204,18 +211,26 @@
 <body>
 
 <header>
-  <div class="container header-content">
-    <div class="logo">
-      <img src="logo.png" alt="SamNerd Eletrônicos" style="height:90px;">
-        SamNerd Eletrônicos
-    </div>
-    <nav>
-      <a href="#produtos">Produtos</a>
-      <a href="#ofertas">Ofertas</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#contato">Contato</a>
-    </nav>
+  <header>
+  <div style="display:flex; align-items:center; gap:14px;">
+    <img src="logo.png" alt="SamNerd Eletrônicos" style="height:180px;">
+    <span style="
+      font-family:'SamNerdFont';
+      font-size:28px;
+      color:#1f2933;
+      line-height:1;
+    ">
+      SamNerd Eletrônicos
+    </span>
   </div>
+
+  <nav>
+    <a href="#">Ofertas</a>
+    <a href="#">Destaques</a>
+    <a href="#">Contato</a>
+  </nav>
+</header>
+
 </header>
 
 <section class="hero">
