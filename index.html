@@ -110,6 +110,36 @@
     .hero-buttons {
       margin-top: 30px;
     }
+    <section id="ofertas" class="products">
+  <h2>Produtos em Destaque</h2>
+  <p class="subtitle">Tecnologia confiável, desempenho e ótimo custo-benefício</p>
+
+  <div class="product-grid">
+
+    <div class="product-card">
+      <img src="produto1.jpg" alt="Produto eletrônico">
+      <h3>Fone Bluetooth Premium</h3>
+      <p class="price">R$ 199,90</p>
+      <a href="#" class="btn">Comprar agora</a>
+    </div>
+
+    <div class="product-card">
+      <img src="produto2.jpg" alt="Produto eletrônico">
+      <h3>Smartwatch Esportivo</h3>
+      <p class="price">R$ 299,90</p>
+      <a href="#" class="btn">Comprar agora</a>
+    </div>
+
+    <div class="product-card">
+      <img src="produto3.jpg" alt="Produto eletrônico">
+      <h3>Caixa de Som Bluetooth</h3>
+      <p class="price">R$ 249,90</p>
+      <a href="#" class="btn">Comprar agora</a>
+    </div>
+
+  </div>
+</section>
+
 
     .btn {
       display: inline-block;
@@ -215,6 +245,76 @@
       }
     }
   </style>
+  .products{
+  padding: 80px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.products h2{
+  font-size: 2.2rem;
+  color: #1f2933;
+}
+
+.products .subtitle{
+  color: #6b7280;
+  margin-bottom: 50px;
+}
+
+.product-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.product-card{
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover{
+  transform: translateY(-6px);
+}
+
+.product-card img{
+  width: 100%;
+  max-height: 180px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.product-card h3{
+  font-size: 1.1rem;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.product-card .price{
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2563eb; /* azul */
+  margin-bottom: 20px;
+}
+
+.btn{
+  display: inline-block;
+  padding: 12px 22px;
+  background-color: #2563eb;
+  color: #ffffff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn:hover{
+  background-color: #1e40af;
+}
+
 </head>
 
 <body>
