@@ -215,27 +215,24 @@ footer {
 <body>
 
 <header>
-  <header>
-  <div style="display:flex; align-items:center; gap:14px;">
-    <img src="logo.png" alt="SamNerd Eletrônicos" style="height:180px;">
-    <span style="
-      font-family:'SamNerdFont';
-      font-size:28px;
-      color:#1f2933;
-      line-height:1;
-    ">
-      Sam Nerd Eletrônicos
-    </span>
+  <div class="container header-content">
+
+    <div class="logo">
+      <img src="logo.png" alt="SamNerd Eletrônicos">
+      <span style="font-family:'SamNerdFont'; font-size:28px;">
+        Sam Nerd Eletrônicos
+      </span>
+    </div>
+
+    <nav>
+      <a href="#ofertas">Ofertas</a>
+      <a href="#produtos">Destaques</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
   </div>
-
-  <nav>
-    <a href="#">Ofertas</a>
-    <a href="#">Destaques</a>
-    <a href="#">Contato</a>
-  </nav>
 </header>
 
-</header>
 
 <section class="hero">
   <div class="container">
@@ -249,52 +246,45 @@ footer {
 </section>
 
 
-<section id="produtos">
+<section id="produtos" class="products">
   <div class="container">
+
     <h2>Produtos em Destaque</h2>
-    <div class="grid">
-      <div class="card">
+    <p class="subtitle">Tecnologia, desempenho e custo-benefício</p>
+
+    <div class="product-grid">
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/400x260">
         <h3>Headset Gamer</h3>
-        <p>Áudio imersivo, conforto e ótima avaliação.</p>
-        <a href="#">Ver oferta →</a>
+        <p class="price">R$ 249,90</p>
+        <a href="#" class="btn btn-primary">Comprar agora</a>
       </div>
-      <div class="card">
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/400x260">
         <h3>Teclado Mecânico</h3>
-        <p>Performance e durabilidade para games e trabalho.</p>
-        <a href="#">Ver oferta →</a>
+        <p class="price">R$ 399,90</p>
+        <a href="#" class="btn btn-primary">Comprar agora</a>
       </div>
-      <div class="card">
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/400x260">
         <h3>Mouse Gamer</h3>
-        <p>Precisão e resposta rápida.</p>
-        <a href="#">Ver oferta →</a>
+        <p class="price">R$ 199,90</p>
+        <a href="#" class="btn btn-primary">Comprar agora</a>
       </div>
+
     </div>
   </div>
 </section>
 
-<section id="ofertas">
-  <div class="container">
-    <h2>Ofertas Selecionadas</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Oferta do Dia</h3>
-        <p>Produto com desconto especial por tempo limitado.</p>
-        <a href="#">Aproveitar agora →</a>
-      </div>
-      <div class="card">
-        <h3>Achado Nerd</h3>
-        <p>Produto diferenciado com ótimo preço.</p>
-        <a href="#">Ver oferta →</a>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section id="sobre" class="about">
   <div class="container">
-    <h2>Sobre o SamNerd Eletrônicos</h2>
+    <h2>Sobre o Sam Nerd Eletrônicos</h2>
     <p>
-      O SamNerd Eletrônicos é um projeto focado em tecnologia, eletrônicos e produtos nerds,
+      O Sam Nerd Eletrônicos é um projeto focado em tecnologia, eletrônicos e produtos nerds,
       com curadoria honesta e foco em custo-benefício. Aqui só entra o que realmente vale a pena.
     </p>
   </div>
@@ -305,7 +295,7 @@ footer {
     <h2>Contato</h2>
     <p style="text-align:center;">
       📷 Instagram: <a href="#">@sam_eletrônicos</a><br>
-      📲 WhatsApp: em breve
+      📲 WhatsApp: (43) 98427-1790
     </p>
   </div>
 </section>
