@@ -6,245 +6,126 @@
   <meta name="description" content="As melhores ofertas em eletrônicos e tecnologia .Sam Nerd Eletrônicos.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    @font-face {
+ <style>
+@font-face {
   font-family: 'SamNerdFont';
   src: url('SamNerd.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
-    :root {
-      --blue: #1e88e5;
-      --dark: #1f1f1f;
-      --gray: #f2f2f2;
-    }
+:root {
+  --blue: #1e88e5;
+  --dark: #1f1f1f;
+  --gray: #f2f2f2;
+}
 
-    * {
-      box-sizing: border-box;
-    }
+* {
+  box-sizing: border-box;
+}
 
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background: #fff;
-      color: #222;
-      line-height: 1.6;
-    }
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #fff;
+  color: #222;
+  line-height: 1.6;
+}
 
-    /* HEADER */
-    header {
-      background: #fff;
-      border-bottom: 1px solid #eee;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
+/* HEADER */
+header {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
 
-    .container {
-      max-width: 1200px;
-      margin: auto;
-      padding: 0 20px;
-    }
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
 
-    .header-content {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 15px 0;
-    }
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+}
 
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-weight: bold;
-      font-size: 20px;
-      color: var(--dark);
-    }
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--dark);
+}
 
-    .logo img {
-      height: 40px;
-    }
+.logo img {
+  height: 40px;
+}
 
-    nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: #555;
-      font-weight: 500;
-    }
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+}
 
-    nav a:hover {
-      color: var(--blue);
-    }
+nav a:hover {
+  color: var(--blue);
+}
 
-    /* HERO */
-    .hero {
-      background: linear-gradient(120deg, #f8f9fa, #ffffff);
-      padding: 90px 0;
-      text-align: center;
-      background: linear-gradient(120deg, #f8f9fa, #ffffff);
+/* HERO */
+.hero {
+  background: linear-gradient(120deg, #f8f9fa, #ffffff);
   background-image: url('bg-eletronicos.png');
   background-repeat: no-repeat;
   background-position: center right;
   background-size: cover;
-
   padding: 110px 0;
   text-align: center;
-      
-    }
+}
 
-    .hero h1 {
-      font-size: 38px;
-      color: var(--dark);
-      margin-bottom: 15px;
-    }
+.hero h1 {
+  font-size: 38px;
+  color: var(--dark);
+  margin-bottom: 15px;
+}
 
-    .hero p {
-      font-size: 18px;
-      color: #555;
-      max-width: 700px;
-      margin: auto;
-    }
+.hero p {
+  font-size: 18px;
+  color: #555;
+  max-width: 700px;
+  margin: auto;
+}
 
-    .hero-buttons {
-      margin-top: 30px;
-    }
-   <section id="ofertas" class="products">
-  <h2>Produtos em Destaque</h2>
-  <p class="subtitle">Tecnologia confiável, desempenho e ótimo custo-benefício</p>
+.hero-buttons {
+  margin-top: 30px;
+}
 
-  <div class="product-grid">
+/* BOTÕES */
+.btn {
+  display: inline-block;
+  padding: 14px 26px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 5px;
+}
 
-    <div class="product-card">
-      <img src="https://via.placeholder.com/300x200" alt="Produto 1">
-      <h3>Produto Eletrônico 1</h3>
-      <p class="price">R$ 199,90</p>
-      <a href="LINK_AFILIADO_1" class="btn" target="_blank">Comprar agora</a>
-    </div>
+.btn-primary {
+  background: var(--blue);
+  color: #fff;
+}
 
-    <div class="product-card">
-      <img src="https://via.placeholder.com/300x200" alt="Produto 2">
-      <h3>Produto Eletrônico 2</h3>
-      <p class="price">R$ 299,90</p>
-      <a href="LINK_AFILIADO_2" class="btn" target="_blank">Comprar agora</a>
-    </div>
+.btn-primary:hover {
+  opacity: 0.9;
+}
 
-    <div class="product-card">
-      <img src="https://via.placeholder.com/300x200" alt="Produto 3">
-      <h3>Produto Eletrônico 3</h3>
-      <p class="price">R$ 399,90</p>
-      <a href="LINK_AFILIADO_3" class="btn" target="_blank">Comprar agora</a>
-    </div>
-
-  </div>
-</section>
-
-
-    .btn {
-      display: inline-block;
-      padding: 14px 26px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: 600;
-      margin: 5px;
-    }
-
-    .btn-primary {
-      background: var(--blue);
-      color: #fff;
-    }
-
-    .btn-primary:hover {
-      opacity: 0.9;
-    }
-
-    .btn-outline {
-      border: 2px solid var(--blue);
-      color: var(--blue);
-    }
-
-    /* SECTIONS */
-    section {
-      padding: 80px 0;
-    }
-
-    section h2 {
-      text-align: center;
-      font-size: 32px;
-      margin-bottom: 50px;
-      color: var(--dark);
-    }
-
-    /* CARDS */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 30px;
-    }
-
-    .card {
-      background: #fff;
-      border: 1px solid #eee;
-      border-radius: 10px;
-      padding: 25px;
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    }
-
-    .card h3 {
-      margin-top: 0;
-      color: var(--dark);
-    }
-
-    .card p {
-      color: #666;
-    }
-
-    .card a {
-      display: inline-block;
-      margin-top: 15px;
-      color: var(--blue);
-      font-weight: 600;
-      text-decoration: none;
-    }
-
-    /* ABOUT */
-    .about {
-      background: var(--gray);
-    }
-
-    .about p {
-      max-width: 800px;
-      margin: auto;
-      text-align: center;
-      font-size: 18px;
-      color: #444;
-    }
-
-    /* FOOTER */
-    footer {
-      background: var(--dark);
-      color: #aaa;
-      padding: 40px 0;
-      text-align: center;
-    }
-
-    footer a {
-      color: var(--blue);
-      text-decoration: none;
-    }
-
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 30px;
-      }
-    }
-    /* SEÇÃO DE PRODUTOS */
+/* SEÇÃO DE PRODUTOS */
 .products {
   padding: 80px 0;
   background: #f9f9f9;
@@ -308,20 +189,25 @@
 }
 
 .product-card .btn {
-  display: inline-block;
-  padding: 12px 26px;
   background: var(--blue);
   color: #fff;
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: 600;
 }
 
-.product-card .btn:hover {
-  opacity: 0.9;
+/* FOOTER */
+footer {
+  background: var(--dark);
+  color: #aaa;
+  padding: 40px 0;
+  text-align: center;
 }
 
-  </style>
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+}
+</style>
+
   
 
 </head>
